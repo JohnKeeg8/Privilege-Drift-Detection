@@ -1,0 +1,12 @@
+[
+  { "user": "alice",  "privilege": "admin_console",  "privilege_type": "admin", "last_used": "2025-08-01" },
+  { "user": "alice",  "privilege": "billing_view",   "privilege_type": "read",  "last_used": "2025-09-28" },
+
+  { "user": "bob",    "privilege": "file_read",      "privilege_type": "read",  "last_used": "2025-10-01" },
+
+  { "user": "carol",  "privilege": "db_write",       "privilege_type": "write", "last_used": "2025-07-20" },
+  { "user": "carol",  "privilege": "vpn_access",     "privilege_type": "admin", "last_used": "2025-10-02" },
+
+  { "user": "dave",   "privilege": "share_read",     "privilege_type": "read",  "last_used": "2025-09-10" },
+  { "user": "dave",   "privilege": "ticket_edit",    "privilege_type": "write", "last_used": "2025-08-15" }
+]
