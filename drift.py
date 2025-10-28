@@ -4,7 +4,6 @@ from datetime import datetime
 
 DATA_PATH = "data/current_state.json"
 SNAP_DIR = "snapshots"
-RISK = {"admin": 10, "user": 5, "no_access": 1}
 
 
 def load_json(path):
