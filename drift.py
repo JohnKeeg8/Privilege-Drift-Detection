@@ -6,18 +6,18 @@ DATA_PATH = "data/current_state.json"
 SNAP_DIR = "snapshots"
 
 
-def load_json(path):
+def load_json(path):  # John
     with open(path, "r") as f:
         return json.load(f)
 
 
-def save_json(path, data):
+def save_json(path, data):  # Michael
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
 
 
-def latest_snapshot_path():
+def latest_snapshot_path():  # John
     if not os.path.isdir(SNAP_DIR):
         return None
     files = sorted(
@@ -26,7 +26,7 @@ def latest_snapshot_path():
     return os.path.join(SNAP_DIR, files[0]) if files else None
 
 
-def create_snapshot():
+def create_snapshot():  # Michael
     if not os.path.exists(DATA_PATH):
         print(f"[!] Current state not found at {DATA_PATH}")
         return
@@ -38,7 +38,7 @@ def create_snapshot():
     print(f"[✓] Snapshot saved → {out_path}")
 
 
-def detect_drift():
+def detect_drift():  # John/Michael
     if not os.path.exists(DATA_PATH):
         print(f"[!] Current state not found at {DATA_PATH}")
         return
@@ -99,7 +99,7 @@ def detect_drift():
         print(f"{user}  {priv}  {typ}")
 
 
-def main_menu():
+def main_menu():  # Michael
     print("\nPrivilege Drift Detection")
     print("-------------------------")
     print("1) Create snapshot")
@@ -114,7 +114,7 @@ def main_menu():
         print("[!] Invalid selection. Please run again and choose 1 or 2.")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # John
     os.makedirs("data", exist_ok=True)
     os.makedirs(SNAP_DIR, exist_ok=True)
     main_menu()
