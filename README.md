@@ -7,7 +7,7 @@ It helps administrators identify when users gain, lose, or change access levels 
 ---
 
 ## 📁 Project Structure
-
+```
 .
 ├── data/
 │ └── current_state.json # Current privileges for all users
@@ -17,7 +17,7 @@ It helps administrators identify when users gain, lose, or change access levels 
 ├── drift.py # Main Python script
 └── README.md # Documentation
 
-
+```
 ---
 
 ## ⚙️ How It Works
