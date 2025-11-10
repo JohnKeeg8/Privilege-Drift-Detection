@@ -1,0 +1,42 @@
+[
+  {
+    "user": "alice",
+    "privileges": [
+      {
+        "name": "admin_console",
+        "access_level": "admin"
+      }
+    ]
+  },
+  {
+    "user": "bob",
+    "privileges": [
+      {
+        "name": "file_share",
+        "access_level": "user"
+      }
+    ]
+  },
+  {
+    "user": "carol",
+    "privileges": [
+      {
+        "name": "vpn_access",
+        "access_level": "admin"
+      }
+    ]
+  },
+  {
+    "user": "dave",
+    "privileges": [
+      {
+        "name": "printer_queue",
+        "access_level": "user"
+      },
+      {
+        "name": "vpn access",
+        "access_level": "user"
+      }
+    ]
+  }
+]

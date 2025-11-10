@@ -1,0 +1,22 @@
+[
+  {
+    "user": "alice",
+    "privilege": "admin_console",
+    "access_level": "admin"
+  },
+  {
+    "user": "bob",
+    "privilege": "file_share",
+    "access_level": "user"
+  },
+  {
+    "user": "carol",
+    "privilege": "vpn_access",
+    "access_level": "admin"
+  },
+  {
+    "user": "dave",
+    "privilege": "printer_queue",
+    "access_level": "no_access"
+  }
+]
